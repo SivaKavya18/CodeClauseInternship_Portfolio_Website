@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.onclk {
+    display: none;
+}
+
+.nav-main {
+    background-color: rgb(112, 112, 225);
+    padding: 5%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.image {
+    width: 15vw;
+    height: 25vh;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.head {
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria;
+}
+
+li,li p {
+    margin: 5px;
+    font-family: 'Lucida Sans';
+}
+
+.cont {
+    max-height: 100vh;
+    position: relative;
+}
+
+.cont::after {
+    content: "";
+    background: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?size=626&ext=jpg&ga=GA1.2.1274690496.1692096902&semt=ais");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+}
+
+tr {
+    font-family: 'Lucida Sans';
+}
+
+.side_head {
+    font-weight: bold;
+}
+
+p {
+    font-family: Calibri;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.sub_head {
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.right_mar {
+    padding-right: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .nav-main {
+      width: 100%;
+      height: 12%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bg-main {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+    }
+
+    .image {
+      width: 19vw;
+      height: 17vh;
+    }
+}
+
+@media (min-width:769px) {
+    .nav-main {
+      width: 30%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bg-main {
+      display: flex;
+    }
+
+    .nav-main button {
+      margin-bottom: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .nav-main {
+      width: 100%;
+      height: 12%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 4px;
+    }
+
+    .bg-main {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+    }
+
+    .image {
+      width: 19vw;
+      height: 17vh;
+    }
+}
+
+.nav-main button {
+    border-radius: 10px;
+    background-color: transparent;
+    border-width: 0px;
+    font-family: 'Lucida Sans';
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+li p {
+    font-weight: normal;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro p {
+    font-family: Bree serif;
+}
+
+.intro .sub {
+    font-family: "Lucida Handwriting";
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
